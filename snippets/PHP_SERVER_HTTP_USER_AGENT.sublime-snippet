@@ -1,0 +1,6 @@
+<snippet>
+    <content><![CDATA[\$_SERVER['HTTP_USER_AGENT'];]]></content>
+    <tabTrigger>SERVER</tabTrigger>
+    <description>HTTP_USER_AGENT</description>
+    <scope>source.php</scope>
+</snippet>

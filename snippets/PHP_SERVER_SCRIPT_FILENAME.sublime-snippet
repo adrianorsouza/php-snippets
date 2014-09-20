@@ -1,0 +1,6 @@
+<snippet>
+    <content><![CDATA[\$_SERVER['SCRIPT_FILENAME'];]]></content>
+    <tabTrigger>SERVER</tabTrigger>
+    <description>SCRIPT_FILENAME</description>
+    <scope>source.php</scope>
+</snippet>
