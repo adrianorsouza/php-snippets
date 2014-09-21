@@ -1,0 +1,8 @@
+* text=auto
+*.php diff=php
+*.php             text
+*.markdown        text
+*.md              text
+*.txt             text
+*.json            text
+*.sublime-snippet text
