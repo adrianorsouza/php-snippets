@@ -99,7 +99,7 @@ class Builder
 			}
 		}
 
-		// $file->write( __DIR__ . '/last_build', date(DATE_RFC2822) );
+		$file->write( dirname($this->path) . '/last_build', date(DATE_RFC2822) . "\n" );
 		echo $file->getOutput();
 	}
 
