@@ -58,6 +58,37 @@ class FileHandler
         return $this;
     }
 
+    /**
+     * Clear directory Files
+     *
+     * @param string $path The directory to unlink files
+     * @throws SnippetBuilder\FileHandlerException
+     */
+    function clearDir($path)
+	{
+		$path = rtrim($path, '/\\');
+
+		if (is_dir($path)) {
+			if ($dh = opendir($path)) {
+
+				while (($filename = readdir($dh)) !== false) {
+
+					if ( $filename !== '.' && $filename !== '..' ) {
+
+						if ( FALSE === @unlink( $path . DIRECTORY_SEPARATOR . $filename) ) {
+
+							throw new FileHandlerException(
+								sprintf('Permission Denied: Unable to unlink %s', $filename)
+							);
+							return false;
+						}
+					}
+				}
+				closedir($dh);
+			}
+		}
+	}
+
     public function setOutput($type, $string = null)
     {
         if ( $type === 'success' ) {
