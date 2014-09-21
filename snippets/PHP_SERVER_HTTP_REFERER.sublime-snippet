@@ -1,0 +1,6 @@
+<snippet>
+    <content><![CDATA[\$_SERVER['HTTP_REFERER'];]]></content>
+    <tabTrigger>_SERVER['HTTP_REFERER']</tabTrigger>
+    <description>PHP VARIABLE</description>
+    <scope>source.php</scope>
+</snippet>
