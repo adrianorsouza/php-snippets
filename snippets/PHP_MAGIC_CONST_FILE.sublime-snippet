@@ -1,0 +1,6 @@
+<snippet>
+    <content><![CDATA[__FILE__]]></content>
+    <tabTrigger>__FILE__</tabTrigger>
+    <description>PHP MAGIC CONST</description>
+    <scope>source.php</scope>
+</snippet>

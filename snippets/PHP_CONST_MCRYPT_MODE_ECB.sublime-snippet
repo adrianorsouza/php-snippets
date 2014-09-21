@@ -1,0 +1,6 @@
+<snippet>
+    <content><![CDATA[MCRYPT_MODE_ECB]]></content>
+    <tabTrigger>MCRYPT_MODE_ECB</tabTrigger>
+    <description>PHP CONSTANT</description>
+    <scope>source.php</scope>
+</snippet>

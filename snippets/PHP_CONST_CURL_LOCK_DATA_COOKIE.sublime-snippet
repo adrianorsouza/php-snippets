@@ -1,0 +1,6 @@
+<snippet>
+    <content><![CDATA[CURL_LOCK_DATA_COOKIE]]></content>
+    <tabTrigger>CURL_LOCK_DATA_COOKIE</tabTrigger>
+    <description>PHP CONSTANT</description>
+    <scope>source.php</scope>
+</snippet>

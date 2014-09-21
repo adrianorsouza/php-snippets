@@ -1,0 +1,6 @@
+<snippet>
+    <content><![CDATA[CURL_RTSPREQ_PLAY]]></content>
+    <tabTrigger>CURL_RTSPREQ_PLAY</tabTrigger>
+    <description>PHP CONSTANT</description>
+    <scope>source.php</scope>
+</snippet>

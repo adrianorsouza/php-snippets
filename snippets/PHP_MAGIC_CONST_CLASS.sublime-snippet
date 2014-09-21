@@ -1,0 +1,6 @@
+<snippet>
+    <content><![CDATA[__CLASS__]]></content>
+    <tabTrigger>__CLASS__</tabTrigger>
+    <description>PHP MAGIC CONST</description>
+    <scope>source.php</scope>
+</snippet>

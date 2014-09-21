@@ -1,0 +1,6 @@
+<snippet>
+    <content><![CDATA[__NAMESPACE__]]></content>
+    <tabTrigger>__NAMESPACE__</tabTrigger>
+    <description>PHP MAGIC CONST</description>
+    <scope>source.php</scope>
+</snippet>

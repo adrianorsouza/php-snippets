@@ -1,0 +1,6 @@
+<snippet>
+    <content><![CDATA[MCRYPT_CAST_256]]></content>
+    <tabTrigger>MCRYPT_CAST_256</tabTrigger>
+    <description>PHP CONSTANT</description>
+    <scope>source.php</scope>
+</snippet>

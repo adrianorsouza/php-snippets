@@ -1,0 +1,6 @@
+<snippet>
+    <content><![CDATA[CURLOPT_APPEND]]></content>
+    <tabTrigger>CURLOPT_APPEND</tabTrigger>
+    <description>PHP CONSTANT</description>
+    <scope>source.php</scope>
+</snippet>

@@ -1,0 +1,6 @@
+<snippet>
+    <content><![CDATA[CURLOPT_ADDRESS_SCOPE]]></content>
+    <tabTrigger>CURLOPT_ADDRESS_SCOPE</tabTrigger>
+    <description>PHP CONSTANT</description>
+    <scope>source.php</scope>
+</snippet>
