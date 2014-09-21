@@ -2,6 +2,7 @@ CHANGELOG
 =========
 0.1.2 (2014-09-21)
 ------------------
+* add server variable HTTP_REFERER snippets
 * add new snippets for PHP constants
 * changed tabTrigger for SERVER variables from `SERVER` to `_SERVER`
 * small fixes for builder class
