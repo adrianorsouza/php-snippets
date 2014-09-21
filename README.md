@@ -10,7 +10,7 @@ PHP snippets list
 **tabTrigger:** `SERVER`  
 **produces:** `$_SERVER['REMOTE_ADDR'];`
 
- * USER 
+ * USER
  * HOME
  * FCGI_ROLE
  * QUERY_STRING
