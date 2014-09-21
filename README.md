@@ -1,7 +1,7 @@
-The missing PHP snippets for Sublime Text editor
+PHP snippets - The missing snippets for Sublime Text editor
 ====
 
-Sublime Text is awesome and comes with a bunch of PHP snippets, but there are few usefull snippets missing that are shared in this repository.
+Sublime Text is awesome and already comes with a bunch of PHP snippets, but there are few usefull snippets missing in there that are shared in this repository.
 
 PHP snippets list
 ----
