@@ -90,7 +90,7 @@ class Builder
 				$content = '\$_SERVER[\''. $item .'\'];';
 				$filename =  $this->setFilePath('PHP_SERVER_' . $item);
 
-				$file->write( $filename, $this->snippet($content, 'SERVER', $item) );
+				$file->write( $filename, $this->snippet($content, "_SERVER['{$item}']", 'PHP VARIABLE') );
 
 			} catch(FileHandlerException $e) {
 
