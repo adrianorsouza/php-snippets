@@ -111,15 +111,25 @@ class Builder
 		$this->path = realpath('./') . DIRECTORY_SEPARATOR . $dir;
 	}
 
-	public function run()
+	public function run($args)
 	{
-		return $this->make();
+		return $this->make($args);
 	}
 
-	protected function make()
+	/**
+	 * Make snippets
+	 *
+	 * @param array $args Accept one argument `clear` whether to clear dir files or not.
+	 * @return string
+	 */
+	protected function make(array $args)
 	{
 		$file = new FileHandler();
-		$file->clearDir($this->path);
+
+		// Clear all snippets within given path before writting
+		if ( isset($args[1]) && $args[1] === 'clear' ) {
+			$file->clearDir($this->path);
+		}
 
 		// --------------------------------------------
 		// Build snippets for SERVER variables
