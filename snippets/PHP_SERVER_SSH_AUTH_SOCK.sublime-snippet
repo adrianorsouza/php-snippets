@@ -1,0 +1,6 @@
+<snippet>
+    <content><![CDATA[\$_SERVER['SSH_AUTH_SOCK'];]]></content>
+    <tabTrigger>SERVER</tabTrigger>
+    <description>SSH_AUTH_SOCK</description>
+    <scope>source.php</scope>
+</snippet>
