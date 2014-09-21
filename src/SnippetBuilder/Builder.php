@@ -146,16 +146,10 @@ class Builder
 
 			try {
 
-				foreach ($this->constants_snippets as $const_prefix) {
-
-					if ( preg_match("/^{$const_prefix}/i", $value) ) {
-
-						$filename = $this->setFilePath('PHP_CONST_' . $value);
-						$file->write( $filename, $this->snippet($value, $value, 'PHP CONSTANT') );
-
-						break;
-					}
-
+				$const_prefix = implode('|', $this->constants_snippets);
+				if ( preg_match("/^({$const_prefix})/i", $value) ) {
+					$filename = $this->setFilePath('PHP_CONST_' . $value);
+					$file->write( $filename, $this->snippet($value, $value, 'PHP CONSTANT') );
 				}
 
 			} catch(FileHandlerException $e) {
