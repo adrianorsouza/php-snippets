@@ -1,6 +1,6 @@
 <snippet>
     <content><![CDATA[\$_SERVER['HTTP_CACHE_CONTROL'];]]></content>
-    <tabTrigger>SERVER</tabTrigger>
-    <description>HTTP_CACHE_CONTROL</description>
+    <tabTrigger>_SERVER['HTTP_CACHE_CONTROL']</tabTrigger>
+    <description>PHP VARIABLE</description>
     <scope>source.php</scope>
 </snippet>

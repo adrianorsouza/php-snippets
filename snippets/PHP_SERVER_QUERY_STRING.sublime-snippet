@@ -1,6 +1,6 @@
 <snippet>
     <content><![CDATA[\$_SERVER['QUERY_STRING'];]]></content>
-    <tabTrigger>SERVER</tabTrigger>
-    <description>QUERY_STRING</description>
+    <tabTrigger>_SERVER['QUERY_STRING']</tabTrigger>
+    <description>PHP VARIABLE</description>
     <scope>source.php</scope>
 </snippet>

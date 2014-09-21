@@ -1,6 +1,6 @@
 <snippet>
     <content><![CDATA[\$_SERVER['HTTP_COOKIE'];]]></content>
-    <tabTrigger>SERVER</tabTrigger>
-    <description>HTTP_COOKIE</description>
+    <tabTrigger>_SERVER['HTTP_COOKIE']</tabTrigger>
+    <description>PHP VARIABLE</description>
     <scope>source.php</scope>
 </snippet>

@@ -1,6 +1,6 @@
 <snippet>
     <content><![CDATA[\$_SERVER['CONTENT_TYPE'];]]></content>
-    <tabTrigger>SERVER</tabTrigger>
-    <description>CONTENT_TYPE</description>
+    <tabTrigger>_SERVER['CONTENT_TYPE']</tabTrigger>
+    <description>PHP VARIABLE</description>
     <scope>source.php</scope>
 </snippet>
