@@ -103,6 +103,7 @@ class Builder
 	protected function make()
 	{
 		$file = new FileHandler();
+		$file->clearDir($this->path);
 
 		// --------------------------------------------
 		// Build snippets for SERVER variables
