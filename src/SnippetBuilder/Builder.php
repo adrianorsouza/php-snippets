@@ -84,6 +84,22 @@ class Builder
 		];
 
 	/**
+	 * Magic constants
+	 *
+	 * @var array
+	 */
+	protected $magic_constants = [
+			'__LINE__',
+			'__FILE__',
+			'__DIR__',
+			'__FUNCTION__',
+			'__CLASS__',
+			'__TRAIT__',
+			'__METHOD__',
+			'__NAMESPACE__',
+		];
+
+	/**
 	 * Contructor
 	 *
 	 * @param string $dir Where to place the build snippets
@@ -141,6 +157,22 @@ class Builder
 					}
 
 				}
+
+			} catch(FileHandlerException $e) {
+
+				$file->setOutput('error', $e->getMessage());
+			}
+		}
+
+		// --------------------------------------------
+		// Build snippets for PHP MAGIC CONSTANTES
+		// --------------------------------------------
+		foreach ($this->magic_constants as $magic_const) {
+
+			try {
+
+				$filename = $this->setFilePath('PHP_MAGIC_CONST_' . trim($magic_const, '__'));
+				$file->write( $filename, $this->snippet($magic_const, $magic_const, 'PHP MAGIC CONST') );
 
 			} catch(FileHandlerException $e) {
 
