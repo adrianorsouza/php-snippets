@@ -79,7 +79,6 @@ class Builder
 	protected function make()
 	{
 		$file = new FileHandler();
-		$output = '';
 
 		// --------------------------------------------
 		// Build snippets for SERVER variables
