@@ -1,0 +1,6 @@
+<snippet>
+    <content><![CDATA[CRYPT_SALT_LENGTH]]></content>
+    <tabTrigger>CRYPT_SALT_LENGTH</tabTrigger>
+    <description>PHP CONSTANT</description>
+    <scope>source.php</scope>
+</snippet>

@@ -1,0 +1,6 @@
+<snippet>
+    <content><![CDATA[CURLOPT_CONNECTTIMEOUT]]></content>
+    <tabTrigger>CURLOPT_CONNECTTIMEOUT</tabTrigger>
+    <description>PHP CONSTANT</description>
+    <scope>source.php</scope>
+</snippet>

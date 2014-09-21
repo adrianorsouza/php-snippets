@@ -1,0 +1,6 @@
+<snippet>
+    <content><![CDATA[CURL_IPRESOLVE_V4]]></content>
+    <tabTrigger>CURL_IPRESOLVE_V4</tabTrigger>
+    <description>PHP CONSTANT</description>
+    <scope>source.php</scope>
+</snippet>

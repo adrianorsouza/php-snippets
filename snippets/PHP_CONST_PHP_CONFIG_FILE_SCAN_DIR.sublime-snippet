@@ -1,0 +1,6 @@
+<snippet>
+    <content><![CDATA[PHP_CONFIG_FILE_SCAN_DIR]]></content>
+    <tabTrigger>PHP_CONFIG_FILE_SCAN_DIR</tabTrigger>
+    <description>PHP CONSTANT</description>
+    <scope>source.php</scope>
+</snippet>

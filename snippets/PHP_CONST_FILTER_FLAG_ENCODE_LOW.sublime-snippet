@@ -1,0 +1,6 @@
+<snippet>
+    <content><![CDATA[FILTER_FLAG_ENCODE_LOW]]></content>
+    <tabTrigger>FILTER_FLAG_ENCODE_LOW</tabTrigger>
+    <description>PHP CONSTANT</description>
+    <scope>source.php</scope>
+</snippet>

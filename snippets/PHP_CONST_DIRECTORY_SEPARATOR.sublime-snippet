@@ -1,0 +1,6 @@
+<snippet>
+    <content><![CDATA[DIRECTORY_SEPARATOR]]></content>
+    <tabTrigger>DIRECTORY_SEPARATOR</tabTrigger>
+    <description>PHP CONSTANT</description>
+    <scope>source.php</scope>
+</snippet>

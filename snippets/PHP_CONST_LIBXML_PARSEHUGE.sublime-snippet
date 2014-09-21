@@ -1,0 +1,6 @@
+<snippet>
+    <content><![CDATA[LIBXML_PARSEHUGE]]></content>
+    <tabTrigger>LIBXML_PARSEHUGE</tabTrigger>
+    <description>PHP CONSTANT</description>
+    <scope>source.php</scope>
+</snippet>

@@ -1,0 +1,6 @@
+<snippet>
+    <content><![CDATA[FILTER_FLAG_NO_RES_RANGE]]></content>
+    <tabTrigger>FILTER_FLAG_NO_RES_RANGE</tabTrigger>
+    <description>PHP CONSTANT</description>
+    <scope>source.php</scope>
+</snippet>

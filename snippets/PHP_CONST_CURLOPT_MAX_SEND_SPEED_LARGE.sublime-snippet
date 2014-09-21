@@ -1,0 +1,6 @@
+<snippet>
+    <content><![CDATA[CURLOPT_MAX_SEND_SPEED_LARGE]]></content>
+    <tabTrigger>CURLOPT_MAX_SEND_SPEED_LARGE</tabTrigger>
+    <description>PHP CONSTANT</description>
+    <scope>source.php</scope>
+</snippet>

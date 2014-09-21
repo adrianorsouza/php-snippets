@@ -1,0 +1,6 @@
+<snippet>
+    <content><![CDATA[PHP_SAPI]]></content>
+    <tabTrigger>PHP_SAPI</tabTrigger>
+    <description>PHP CONSTANT</description>
+    <scope>source.php</scope>
+</snippet>

@@ -1,0 +1,6 @@
+<snippet>
+    <content><![CDATA[LC_TIME]]></content>
+    <tabTrigger>LC_TIME</tabTrigger>
+    <description>PHP CONSTANT</description>
+    <scope>source.php</scope>
+</snippet>

@@ -1,0 +1,6 @@
+<snippet>
+    <content><![CDATA[LIBXML_NOENT]]></content>
+    <tabTrigger>LIBXML_NOENT</tabTrigger>
+    <description>PHP CONSTANT</description>
+    <scope>source.php</scope>
+</snippet>

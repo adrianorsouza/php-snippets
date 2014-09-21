@@ -1,0 +1,6 @@
+<snippet>
+    <content><![CDATA[DATE_RFC3339]]></content>
+    <tabTrigger>DATE_RFC3339</tabTrigger>
+    <description>PHP CONSTANT</description>
+    <scope>source.php</scope>
+</snippet>

@@ -1,0 +1,6 @@
+<snippet>
+    <content><![CDATA[PHP_ROUND_HALF_DOWN]]></content>
+    <tabTrigger>PHP_ROUND_HALF_DOWN</tabTrigger>
+    <description>PHP CONSTANT</description>
+    <scope>source.php</scope>
+</snippet>

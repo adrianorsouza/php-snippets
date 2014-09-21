@@ -1,0 +1,6 @@
+<snippet>
+    <content><![CDATA[PHP_URL_USER]]></content>
+    <tabTrigger>PHP_URL_USER</tabTrigger>
+    <description>PHP CONSTANT</description>
+    <scope>source.php</scope>
+</snippet>

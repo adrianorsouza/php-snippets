@@ -1,0 +1,6 @@
+<snippet>
+    <content><![CDATA[LIBXML_NSCLEAN]]></content>
+    <tabTrigger>LIBXML_NSCLEAN</tabTrigger>
+    <description>PHP CONSTANT</description>
+    <scope>source.php</scope>
+</snippet>

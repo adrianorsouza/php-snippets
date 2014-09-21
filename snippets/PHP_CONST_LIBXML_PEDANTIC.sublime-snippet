@@ -1,0 +1,6 @@
+<snippet>
+    <content><![CDATA[LIBXML_PEDANTIC]]></content>
+    <tabTrigger>LIBXML_PEDANTIC</tabTrigger>
+    <description>PHP CONSTANT</description>
+    <scope>source.php</scope>
+</snippet>

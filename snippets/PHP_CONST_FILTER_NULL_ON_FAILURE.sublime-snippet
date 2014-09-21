@@ -1,0 +1,6 @@
+<snippet>
+    <content><![CDATA[FILTER_NULL_ON_FAILURE]]></content>
+    <tabTrigger>FILTER_NULL_ON_FAILURE</tabTrigger>
+    <description>PHP CONSTANT</description>
+    <scope>source.php</scope>
+</snippet>
