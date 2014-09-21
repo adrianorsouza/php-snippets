@@ -17,6 +17,7 @@ use SnippetBuilder\FileHandlerException;
 class Builder
 {
 	protected $path;
+
 	protected $server_snippets = [
 		  'USER',
 		  'HOME',
@@ -60,6 +61,28 @@ class Builder
 		];
 
 	/**
+	 * Most used PHP constants prefix
+	 *
+	 * @var array
+	 */
+	protected $constants_snippets = [
+			'CURLOPT_',
+			'CURL_',
+			'CRYPT_',
+			'DATE_',
+			'DIRECTORY_',
+			'E_',
+			'FILTER_',
+			'JSON_',
+			'LIBXML_',
+			'LC_',
+			'MCRYPT_',
+			'PATH_',
+			'PHP_',
+			'PHP_URL_',
+		];
+
+	/**
 	 * Contructor
 	 *
 	 * @param string $dir Where to place the build snippets
@@ -91,6 +114,31 @@ class Builder
 				$filename =  $this->setFilePath('PHP_SERVER_' . $item);
 
 				$file->write( $filename, $this->snippet($content, "_SERVER['{$item}']", 'PHP VARIABLE') );
+
+			} catch(FileHandlerException $e) {
+
+				$file->setOutput('error', $e->getMessage());
+			}
+		}
+
+		// --------------------------------------------
+		// Build snippets for PHP CONSTANTES
+		// --------------------------------------------
+		foreach (array_keys(get_defined_constants()) as $key => $value) {
+
+			try {
+
+				foreach ($this->constants_snippets as $const_prefix) {
+
+					if ( preg_match("/^{$const_prefix}/i", $value) ) {
+
+						$filename = $this->setFilePath('PHP_CONST_' . $value);
+						$file->write( $filename, $this->snippet($value, $value, 'PHP CONSTANT') );
+
+						break;
+					}
+
+				}
 
 			} catch(FileHandlerException $e) {
 
