@@ -22,32 +22,32 @@ class FileHandler
      */
     public function write($filename, $content)
     {
-    	if ( !is_dir( dirname($filename) ) ) {
-    		throw new FileHandlerException(
-    			sprintf('Snippets directory not found: %s', dirname($filename))
-    		);
+        if ( !is_dir( dirname($filename) ) ) {
+            throw new FileHandlerException(
+                sprintf('Snippets directory not found: %s', dirname($filename))
+            );
 
-    		return false;
-    	}
+            return false;
+        }
 
-		$success_message = ( !file_exists($filename) ) ? "Created new file --> %s" : "Updated file --> %s";
+        $success_message = ( !file_exists($filename) ) ? "Created new file --> %s" : "Updated file --> %s";
 
         if ( ! $handle = @fopen($filename, 'w')) {
-        	throw new FileHandlerException(
-        		sprintf('Unable to read a file %s due the file permissions', $filename)
-			);
+            throw new FileHandlerException(
+                sprintf('Unable to read a file %s due the file permissions', $filename)
+            );
 
-			return false;
+            return false;
         }
 
         flock($handle, LOCK_EX);
 
         if ( fwrite($handle, $content) === FALSE ) {
-        	throw new FileHandlerException(
-        		sprintf("Unable to write a file %s due the file permissions --> %s", $filename)
-        	);
+            throw new FileHandlerException(
+                sprintf("Unable to write a file %s due the file permissions --> %s", $filename)
+            );
 
-        	return false;
+            return false;
         }
 
         flock($handle, LOCK_UN);
@@ -65,29 +65,29 @@ class FileHandler
      * @throws SnippetBuilder\FileHandlerException
      */
     function clearDir($path)
-	{
-		$path = rtrim($path, '/\\');
+    {
+        $path = rtrim($path, '/\\');
 
-		if (is_dir($path)) {
-			if ($dh = opendir($path)) {
+        if (is_dir($path)) {
+            if ($dh = opendir($path)) {
 
-				while (($filename = readdir($dh)) !== false) {
+                while (($filename = readdir($dh)) !== false) {
 
-					if ( $filename !== '.' && $filename !== '..' ) {
+                    if ( $filename !== '.' && $filename !== '..' ) {
 
-						if ( FALSE === @unlink( $path . DIRECTORY_SEPARATOR . $filename) ) {
+                        if ( FALSE === @unlink( $path . DIRECTORY_SEPARATOR . $filename) ) {
 
-							throw new FileHandlerException(
-								sprintf('Permission Denied: Unable to unlink %s', $filename)
-							);
-							return false;
-						}
-					}
-				}
-				closedir($dh);
-			}
-		}
-	}
+                            throw new FileHandlerException(
+                                sprintf('Permission Denied: Unable to unlink %s', $filename)
+                            );
+                            return false;
+                        }
+                    }
+                }
+                closedir($dh);
+            }
+        }
+    }
 
     public function setOutput($type, $string = null)
     {
@@ -111,7 +111,7 @@ class FileHandler
 
     public function getOutput()
     {
-    	$output = '';
+        $output = '';
         $count = 0;
 
         foreach ($this->_result as $result) {
